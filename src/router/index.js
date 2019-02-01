@@ -25,6 +25,11 @@ export default new Router({
                     meta: { title: '自定义图标' }
                 },
                 {
+                    path: '/caseManage',
+                    component: resolve => require(['../components/page/caseManage.vue'], resolve),
+                    meta: { title: 'case管理' }
+                },
+                {
                     path: '/table',
                     component: resolve => require(['../components/page/BaseTable.vue'], resolve),
                     meta: { title: '基础表格' }

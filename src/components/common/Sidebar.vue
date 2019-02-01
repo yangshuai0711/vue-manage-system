@@ -49,6 +49,11 @@
                         title: '基础表格'
                     },
                     {
+                        icon: 'el-icon-lx-cascades',
+                        index: 'caseManage',
+                        title: 'case管理'
+                    },
+                    {
                         icon: 'el-icon-lx-copy',
                         index: 'tabs',
                         title: 'tab选项卡'
