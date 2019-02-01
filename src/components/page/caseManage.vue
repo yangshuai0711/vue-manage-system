@@ -7,10 +7,10 @@
         </div>
         <div class="container">
             <div class="handle-box">
-                <el-radio-group v-model="query.source" size="small">
-                    <el-radio-button label="真值平台" value="1" key="1"></el-radio-button>
-                    <el-radio-button label="自主导入" value="0" key="0"></el-radio-button>
-                </el-radio-group>
+                <el-select v-model="query.source" placeholder="case来源" class="handle-select">
+                    <el-option key="0" label="自主导入" value="0"></el-option>
+                    <el-option key="1" label="真值平台" value="1"></el-option>
+                </el-select>
                 <el-select v-model="query.categoryId" placeholder="case分类" class="handle-select mr10">
                     <el-option v-for="(item,key) in form.categoryList" key="key" label="item.name" value="item.id"></el-option>
                 </el-select>
